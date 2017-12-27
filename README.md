@@ -1,0 +1,19 @@
+### start
+
+`npm start`
+
+ nodemon node-testでサーバーを起動し、npm install ~するときだけcontroll + cでサーバーを停止します。
+
+ db構築はデータベース構築テスト参照
+
+#### 注意
+
+node_modulesも入っているので、インストール時注意！！！
+
+### データベース
+
+[データベース構築テスト](https://github.com/osamu38/node-express-curriculum/wiki/Node.js%E3%82%92%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
+
+
+### 参照url
+[node+expressで接続](https://github.com/osamu38/node-express-curriculum/wiki/MySQL%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%82%88%E3%81%86)
