@@ -16,7 +16,7 @@ node_modulesも入っているので、インストール時注意！！！
 
 ### データベース
 
-[データベース構築テスト](https://github.com/osamu38/node-express-curriculum/wiki/Node.js%E3%82%92%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
+mysql-backupというフォルダを作ってそこに格納してあります！！！
 
 
 ### 参照url
