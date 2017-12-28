@@ -5,11 +5,15 @@ var connection = require('../mysqlConnection');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var query = 'SELECT *, DATE_FORMAT(created_at, \'%Y年%m月%d日 %k時%i分%s秒\') AS created_at FROM boards';
+  var query = 'SELECT *, DATE_FORMAT(created_at, \'%Y年%m月%d日 %k時%i分%s秒\') AS created_at FROM boards ORDER BY board_id desc';
+  var query2 = 'SELECT *, DATE_FORMAT(created_at, \'%Y年%m月%d日 %k時%i分%s秒\') AS created_at FROM boards ORDER BY board_id desc LIMIT 3';
   connection.query(query, function(err, rows) {
-    res.render('index', {
-      title: 'はじめてのNode.js',
-      boardList: rows
+    connection.query(query2, function(err, rows2) {
+      res.render('index', {
+        title: 'はじめてのNode.js',
+        boardList: rows,
+        boardList2: rows2
+      });
     });
   });
 });

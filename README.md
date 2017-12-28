@@ -2,9 +2,13 @@
 
 `npm start`
 
+サーバー側を起動したまま編集するなら
+
+`nodemon node-test`
+
  nodemon node-testでサーバーを起動し、npm install ~するときだけcontroll + cでサーバーを停止します。
 
- db構築はデータベース構築テスト参照
+ db構築は「データベース構築テスト」参照
 
 #### 注意
 

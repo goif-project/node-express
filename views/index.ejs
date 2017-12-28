@@ -15,13 +15,23 @@
         <br>
         <button type="submit" class="submit">ボード作成</button>
       </form>
-      <ul class="main-list">
+      <ul class="main-list">トップ3件
+        <% boardList2.forEach(function(boardItem2) { %>
+          <li class="main-list__item">
+            <a href="/boards/<%= boardItem2.board_id %>" class="board">
+              <p class="board__title"><%= boardItem2.title %></p>
+              <p class="board__date"><%= boardItem2.created_at %></p>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+      <ul class="main-list">全体
         <% boardList.forEach(function(boardItem) { %>
           <li class="main-list__item">
-            <div class="board">
+            <a href="/boards/<%= boardItem.board_id %>" class="board">
               <p class="board__title"><%= boardItem.title %></p>
               <p class="board__date"><%= boardItem.created_at %></p>
-            </div>
+            </a>
           </li>
         <% }); %>
       </ul>
