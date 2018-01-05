@@ -13,14 +13,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- <form action="/" method="post" class="board-form">
-        スコア: <input type="text" name="score" class="input" required>
-        名前: <input type="text" name="user_name" class="input" required><br>
-        <br>
-        <button type="submit" class="submit">ボード作成</button>
-      </form> -->
-      <div id="tsts_bt"><a href="">ボタンおすとリロード</a></div>
-      <ul class="main-list">トップ3件
+      <h1>TOP RANKING</h1>
+      <ul class="main-list">
         <% Rank.forEach(function(scoreRank) { %>
           <li class="main-list__item">
             <p class="board__title"><%= scoreRank.user_name %></p>
@@ -29,7 +23,8 @@
           </li>
         <% }); %>
       </ul>
-      <ul class="main-list">全体
+      <h1>NEW SCORE</h1>
+      <ul class="main-list">
         <% List.forEach(function(scoreList) { %>
           <li class="main-list__item">
             <p class="board__title"><%= scoreList.user_name %></p>
