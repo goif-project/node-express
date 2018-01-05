@@ -14,21 +14,21 @@
   <body>
     <div class="wrapper">
       <h1>TOP RANKING</h1>
-      <ul class="main-list">
+      <ul class="rank-list">
         <% Rank.forEach(function(scoreRank) { %>
           <li class="main-list__item">
             <p class="board__title"><%= scoreRank.user_name %></p>
-            <p class="board__date"><%= scoreRank.score %></p>
+            <p class="board__date"><%= scoreRank.score %>点</p>
             </a>
           </li>
         <% }); %>
       </ul>
       <h1>NEW SCORE</h1>
-      <ul class="main-list">
+      <ul class="new-list">
         <% List.forEach(function(scoreList) { %>
           <li class="main-list__item">
             <p class="board__title"><%= scoreList.user_name %></p>
-            <p class="board__date"><%= scoreList.score %></p>
+            <p class="board__date"><%= scoreList.score %>点</p>
           </li>
         <% }); %>
       </ul>
