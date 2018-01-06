@@ -90,6 +90,13 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 
 //ここから
 
+@font-face {
+	font-family: "aquino"
+	src url("../fonts/Aquino-Demo.ttf") format('woff'),
+	url("../fonts/Aquino-Demo.ttf") format('truetype');
+}
+
+
 @keyframes AnimationName{
   0%{
     background-position:0% 50%;
@@ -132,31 +139,40 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		li{
 			background: #fff;
 			margin: 0 0 15px;
-			padding: 20px;
-
+			position: relative;
+			.board__title{
+				position: absolute;
+				top: 20%;
+			}
+			.board__date{
+				position: absolute;
+				top: 30%;
+				right: 0%;
+			}
 		}
 		&.rank-list{
 			li{
-				padding-left:calc(70px + 7%);
+				height: 120px;
 				&:nth-child(1){
-					background:#fff url(../images/rank1.jpg) no-repeat 5% 25%;
-					background-size:5%;
+					background:#fff url(../images/rank1.png) no-repeat 2% 40%;
+					background-size:7%;
 					border-left:15px solid #ffd700;
 					border-bottom:5px solid #ffd700;
 				}
 				&:nth-child(2){
-					background:#fff url(../images/rank2.jpg) no-repeat 5% 25%;
-					background-size:5%;
+					background:#fff url(../images/rank2.png) no-repeat 2% 40%;
+					background-size:7%;
 					border-left:15px solid #c0c0c0;
 					border-bottom:5px solid #c0c0c0;
 				}
 				&:nth-child(3){
-					background:#fff url(../images/rank3.jpg) no-repeat 5% 25%;
-					background-size:5%;
+					background:#fff url(../images/rank3.png) no-repeat 2% 40%;
+					background-size:7%;
 					border-left:15px solid #c47222;
 					border-bottom:5px solid #c47222;
 				}
 				.board__title{
+					left: 10%;
 					font-size:3vw;
 				}
 				.board__date{
@@ -168,9 +184,12 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		}
 		&.new-list{
 			li{
-				padding-left:5%;
+				height: 90px;
+				border-left:4px solid #000;
+				border-bottom:2px solid #000;
 			}
 			.board__title{
+				left: 5%;
 				font-size:2vw;
 			}
 			.board__date{
@@ -203,7 +222,6 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 			}
 			&.rank-list{
 				li{
-					padding-left: 18%;
 					&:nth-child(1){
 						background:#fff url(../images/rank1.jpg) no-repeat 5% 30%;
 						background-size:auto 50%;

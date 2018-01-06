@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   connection.query(query, function(err, rows) {
     connection.query(query2, function(err, rows2) {
       res.render('index', {
-        title: 'はじめてのNode.js',
+        title: 'ランキング',
         List: rows,
         Rank: rows2
       });
