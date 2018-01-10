@@ -39,7 +39,7 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; } }
 .wrapper { background: linear-gradient(45deg, #14ff00, #f2ff86, #14ff00); background-size: 600% 600%; animation: AnimationName 9s ease infinite; padding: 0 0 5%; }
-.wrapper h1 { font-size: 6vw; letter-spacing: 1vw; text-align: center; font-family: "aquino"; color: #ffa000; margin: 0 0 2%; text-shadow: #fff1da 0.5vw 0.5vw 0px, #fff1da -0.5vw 0.5vw 0px, #fff1da 0.5vw -0.5vw 0px, #fff1da -0.5vw -0.5vw 0px, #fff1da 0px 0.5vw 0px, #fff1da -0.5vw 0px 0px, #fff1da 0.5vw 0px 0px, #fff1da 0px -0.5vw 0px; }
+.wrapper h1 { font-size: 6vw; letter-spacing: 1vw; text-align: center; font-family: "aquino"; color: #ffa000; margin: 0 0 2%; text-shadow: #fff1da 0.2vw 0.2vw 0px, #fff1da -0.2vw 0.2vw 0px, #fff1da 0.2vw -0.2vw 0px, #fff1da -0.2vw -0.2vw 0px, #fff1da 0px 0.2vw 0px, #fff1da -0.2vw 0px 0px, #fff1da 0.2vw 0px 0px, #fff1da 0px -0.2vw 0px; }
 .wrapper ul { width: 80%; margin: 0 auto; }
 .wrapper ul li { background: #fff; margin: 0 0 15px; position: relative; }
 .wrapper ul li .board__title { position: absolute; top: 20%; }
@@ -54,7 +54,7 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .wrapper ul.new-list .board__title { left: 5%; font-size: 2vw; }
 .wrapper ul.new-list .board__date { text-align: right; font-size: 1.5vw; padding: 0 5% 0 0; }
 
-@media (max-width: 767px) { .wrapper h1 { font-size: 6vw; letter-spacing: 1vw; text-align: center; font-family: "aquino"; color: #ffa000; margin: 0 0 2%; text-shadow: #fff1da 0.5vw 0.5vw 0px, #fff1da -0.5vw 0.5vw 0px, #fff1da 0.5vw -0.5vw 0px, #fff1da -0.5vw -0.5vw 0px, #fff1da 0px 0.5vw 0px, #fff1da -0.5vw 0px 0px, #fff1da 0.5vw 0px 0px, #fff1da 0px -0.5vw 0px; }
+@media (max-width: 767px) { .wrapper h1 { font-size: 6vw; letter-spacing: 1vw; text-align: center; font-family: "aquino"; color: #ffa000; margin: 0 0 2%; text-shadow: #fff1da 0.2vw 0.2vw 0px, #fff1da -0.2vw 0.2vw 0px, #fff1da 0.2vw -0.2vw 0px, #fff1da -0.2vw -0.2vw 0px, #fff1da 0px 0.2vw 0px, #fff1da -0.2vw 0px 0px, #fff1da 0.2vw 0px 0px, #fff1da 0px -0.2vw 0px; }
   .wrapper ul { width: 90%; margin: 0 auto; }
   .wrapper ul li { background: #fff; margin: 0 0 15px; padding: 20px; }
   .wrapper ul.rank-list li:nth-child(1) { background: #fff url(../images/rank1.jpg) no-repeat 5% 30%; background-size: auto 50%; border-left: 7px solid #ffd700; border-bottom: 3px solid #ffd700; }

@@ -8,7 +8,7 @@
 //     setTimeout(doReloadWithCache, 500);
 // });
 $(function(){
-$('#tsts_bt').click(function(){
+$('#score_post').click(function(){
   window.location.reload(false);
 })
 });
