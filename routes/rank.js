@@ -10,8 +10,14 @@ var query2 = 'SELECT * from total_score ORDER BY score desc LIMIT 3';
 // }, 1000);
 
 router.get('/', function(req, res, next) {
-  res.render('index', {
-    title: 'GOLF TOP'
+  connection.query(query, function(err, rows) {
+    connection.query(query2, function(err, rows2) {
+      res.render('rank', {
+        title: 'ランキング',
+        List: rows,
+        Rank: rows2
+      });
+    });
   });
 });
 

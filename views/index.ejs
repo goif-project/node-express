@@ -6,32 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title><%= title %></title>
-    <script src="socket.io/socket.io.js"></script>
     <script src="/javascripts/jquery.js"></script>
-  	<script src="/javascripts/post_data.js"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <div class="wrapper">
-      <h1>TOP RANKING</h1>
-      <ul class="rank-list">
-        <% Rank.forEach(function(scoreRank) { %>
-          <li class="main-list__item">
-            <p class="board__title"><%= scoreRank.user_name %></p>
-            <p class="board__date"><%= scoreRank.score %>点</p>
-            </a>
-          </li>
-        <% }); %>
-      </ul>
-      <h1>NEW SCORE</h1>
-      <ul class="new-list">
-        <% List.forEach(function(scoreList) { %>
-          <li class="main-list__item">
-            <p class="board__title"><%= scoreList.user_name %></p>
-            <p class="board__date"><%= scoreList.score %>点</p>
-          </li>
-        <% }); %>
-      </ul>
-    </div>
+    <article class="wrapper">
+      <section id="firstview">
+        <h1>HOME GOLF</h1>
+        <p class="rank_btn"><a href="rank">ランキングを見る</a></p>
+        <p class="scroll">スクロール</p>
+      </section>
+      <section id="about">
+        <h2>○○とは</h2>
+        <p class="title_text">
+          テキストテキストテキストテキストテキストテキスト
+        </p>
+      </section>
+      <section id="flow">
+        <h2>使い方</h2>
+        <div class="flow_detail first">
+          <h3>1.テキストテキスト</h3>
+          <p class="image_wrap">
+            <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
+          </p>
+          <p class="detail_text">
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="flow_detail second">
+          <h3>2.テキストテキスト</h3>
+          <p class="image_wrap">
+            <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
+          </p>
+          <p class="detail_text">
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="flow_detail third">
+          <h3>3.テキストテキスト</h3>
+          <p class="image_wrap">
+            <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
+          </p>
+          <p class="detail_text">
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="flow_detail fourth">
+          <h3>4.テキストテキスト</h3>
+          <p class="image_wrap">
+            <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
+          </p>
+          <p class="detail_text">
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキスト
+          </p>
+        </div>
+      </section>
+      <section id="come">
+        <h2>ブース○○○です。ぜひお越しください。</h2>
+        <h3>ランキングを見る</h3>
+        <p class="rank_btn"><a href="rank">ランキングを見る</a></p>
+      </section>
+    </article>
   </body>
 </html>

@@ -90,181 +90,258 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 
 //ここから
 
-@font-face {
-	font-family: "aquino"
-	src url("../fonts/Aquino-Demo.ttf") format('woff'),
-	url("../fonts/Aquino-Demo.ttf") format('truetype');
-}
+// @font-face {
+// 	font-family: "aquino"
+// 	src url("../fonts/Aquino-Demo.ttf") format('woff'),
+// 	url("../fonts/Aquino-Demo.ttf") format('truetype');
+// }
+
+//
+// @keyframes AnimationName{
+//   0%{
+//     background-position:0% 50%;
+// 	}
+//   50%{
+//     background-position:100% 50%;
+// 	}
+//   100%{
+//     background-position:0% 50%;
+// 	}
+// }
+// @mixin background-color-animetion($color1,$color2){
+//   background: linear-gradient(45deg, $color1, $color2, $color1);
+//   background-size: 600% 600%;
+//   animation: AnimationName 9s ease infinite;
+// }
+//
+// @mixin contour($contour_color){
+//   text-shadow: $contour_color 0.2vw 0.2vw 0px, $contour_color -0.2vw 0.2vw 0px,
+//               $contour_color 0.2vw -0.2vw 0px, $contour_color -0.2vw -0.2vw 0px,
+//               $contour_color 0px 0.2vw 0px, $contour_color -0.2vw 0px 0px,
+//               $contour_color 0.2vw 0px 0px, $contour_color -0px -0.2vw 0px;
+// }
 
 
-@keyframes AnimationName{
-  0%{
-    background-position:0% 50%;
-	}
-  50%{
-    background-position:100% 50%;
-	}
-  100%{
-    background-position:0% 50%;
-	}
-}
-@mixin background-color-animetion($color1,$color2){
-  background: linear-gradient(45deg, $color1, $color2, $color1);
-  background-size: 600% 600%;
-  animation: AnimationName 9s ease infinite;
+//
+// .wrapper_rank{
+// 	@include background-color-animetion(#14ff00, #f2ff86);
+// 	padding:0 0 5%;
+// 	h1{
+// 		font-size: 6vw;
+//     letter-spacing: 1vw;
+//     text-align:center;
+//     font-family: "aquino";
+//     color: #ffa000;
+// 		margin: 0 0 2%;
+//     @include contour(#fff1da);
+// 	}
+// 	ul{
+// 		width: 80%;
+// 		margin:0 auto;
+// 		li{
+// 			background: #fff;
+// 			margin: 0 0 15px;
+// 			position: relative;
+// 			.board__title{
+// 				position: absolute;
+// 				top: 20%;
+// 			}
+// 			.board__date{
+// 				position: absolute;
+// 				top: 30%;
+// 				right: 0%;
+// 			}
+// 		}
+// 		&.rank-list{
+// 			li{
+// 				height: 120px;
+// 				&:nth-child(1){
+// 					background:#fff url(../images/rank1.png) no-repeat 2% 40%;
+// 					background-size:7%;
+// 					border-left:15px solid #ffd700;
+// 					border-bottom:5px solid #ffd700;
+// 				}
+// 				&:nth-child(2){
+// 					background:#fff url(../images/rank2.png) no-repeat 2% 40%;
+// 					background-size:7%;
+// 					border-left:15px solid #c0c0c0;
+// 					border-bottom:5px solid #c0c0c0;
+// 				}
+// 				&:nth-child(3){
+// 					background:#fff url(../images/rank3.png) no-repeat 2% 40%;
+// 					background-size:7%;
+// 					border-left:15px solid #c47222;
+// 					border-bottom:5px solid #c47222;
+// 				}
+// 				.board__title{
+// 					left: 10%;
+// 					font-size:3vw;
+// 				}
+// 				.board__date{
+// 					text-align: right;
+// 					font-size:2vw;
+// 					padding: 0 5% 0 0;
+// 				}
+// 			}
+// 		}
+// 		&.new-list{
+// 			li{
+// 				height: 90px;
+// 				border-left:4px solid #000;
+// 				border-bottom:2px solid #000;
+// 			}
+// 			.board__title{
+// 				left: 5%;
+// 				font-size:2vw;
+// 			}
+// 			.board__date{
+// 				text-align: right;
+// 				font-size:1.5vw;
+// 				padding: 0 5% 0 0;
+// 			}
+// 		}
+// 	}
+// }
+// //ここからsp
+// @media (max-width: 767px) {
+// 	.wrapper_rank{
+// 		h1{
+// 			font-size: 6vw;
+// 	    letter-spacing: 1vw;
+// 	    text-align:center;
+// 	    font-family: "aquino";
+// 	    color: #ffa000;
+// 			margin: 0 0 2%;
+// 	    @include contour(#fff1da);
+// 		}
+// 		ul{
+// 			width: 90%;
+// 			margin:0 auto;
+// 			li{
+// 				background: #fff;
+// 				margin: 0 0 15px;
+// 				padding: 20px;
+// 			}
+// 			&.rank-list{
+// 				li{
+// 					&:nth-child(1){
+// 						background:#fff url(../images/rank1.jpg) no-repeat 5% 30%;
+// 						background-size:auto 50%;
+// 						border-left:7px solid #ffd700;
+// 						border-bottom:3px solid #ffd700;
+// 					}
+// 					&:nth-child(2){
+// 						background:#fff url(../images/rank2.jpg) no-repeat 5% 30%;
+// 						background-size:auto 50%;
+// 						border-left:7px solid #c0c0c0;
+// 						border-bottom:3px solid #c0c0c0;
+// 					}
+// 					&:nth-child(3){
+// 						background:#fff url(../images/rank3.jpg) no-repeat 5% 30%;
+// 						background-size:auto 50%;
+// 						border-left:7px solid #c47222;
+// 						border-bottom:3px solid #c47222;
+// 					}
+// 					.board__title{
+// 						font-size:3.5vw;
+// 					}
+// 					.board__date{
+// 						text-align: right;
+// 						font-size:2.5vw;
+// 						padding: 0 5% 0 0;
+// 					}
+// 				}
+// 			}
+// 			&.new-list{
+// 				li{
+// 					padding-left:5%;
+// 					border-left:4px solid #000;
+// 					border-bottom:2px solid #000;
+// 				}
+// 				.board__title{
+// 					font-size:2vw;
+// 				}
+// 				.board__date{
+// 					text-align: right;
+// 					font-size:1.5vw;
+// 					padding: 0 5% 0 0;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+@mixin sp_width($inner,$max){
+	width:$inner;
+	max-width: $max;
+	margin:0 auto;
 }
 
-@mixin contour($contour_color){
-  text-shadow: $contour_color 0.2vw 0.2vw 0px, $contour_color -0.2vw 0.2vw 0px,
-              $contour_color 0.2vw -0.2vw 0px, $contour_color -0.2vw -0.2vw 0px,
-              $contour_color 0px 0.2vw 0px, $contour_color -0.2vw 0px 0px,
-              $contour_color 0.2vw 0px 0px, $contour_color -0px -0.2vw 0px;
+//class定義
+.rank_btn{
+	width:60%;
+	margin:0 auto;
+	background: #ff0;
+	text-align: center;
 }
 
+//ここからsp新規
 .wrapper{
-	@include background-color-animetion(#14ff00, #f2ff86);
-	padding:0 0 5%;
-	h1{
-		font-size: 6vw;
-    letter-spacing: 1vw;
-    text-align:center;
-    font-family: "aquino";
-    color: #ffa000;
-		margin: 0 0 2%;
-    @include contour(#fff1da);
-	}
-	ul{
-		width: 80%;
-		margin:0 auto;
-		li{
-			background: #fff;
-			margin: 0 0 15px;
-			position: relative;
-			.board__title{
-				position: absolute;
-				top: 20%;
-			}
-			.board__date{
-				position: absolute;
-				top: 30%;
-				right: 0%;
-			}
-		}
-		&.rank-list{
-			li{
-				height: 120px;
-				&:nth-child(1){
-					background:#fff url(../images/rank1.png) no-repeat 2% 40%;
-					background-size:7%;
-					border-left:15px solid #ffd700;
-					border-bottom:5px solid #ffd700;
-				}
-				&:nth-child(2){
-					background:#fff url(../images/rank2.png) no-repeat 2% 40%;
-					background-size:7%;
-					border-left:15px solid #c0c0c0;
-					border-bottom:5px solid #c0c0c0;
-				}
-				&:nth-child(3){
-					background:#fff url(../images/rank3.png) no-repeat 2% 40%;
-					background-size:7%;
-					border-left:15px solid #c47222;
-					border-bottom:5px solid #c47222;
-				}
-				.board__title{
-					left: 10%;
-					font-size:3vw;
-				}
-				.board__date{
-					text-align: right;
-					font-size:2vw;
-					padding: 0 5% 0 0;
-				}
-			}
-		}
-		&.new-list{
-			li{
-				height: 90px;
-				border-left:4px solid #000;
-				border-bottom:2px solid #000;
-			}
-			.board__title{
-				left: 5%;
-				font-size:2vw;
-			}
-			.board__date{
-				text-align: right;
-				font-size:1.5vw;
-				padding: 0 5% 0 0;
-			}
-		}
-	}
-}
-//ここからsp
-@media (max-width: 767px) {
-	.wrapper{
+	@include sp_width(100%,750px);
+	background: #0f0;
+	#firstview{
+		background: #ff0 url(http://via.placeholder.com/450x800.png) no-repeat center;
+		background-size: 100% auto;
+		height: 100vh;
 		h1{
-			font-size: 6vw;
-	    letter-spacing: 1vw;
-	    text-align:center;
-	    font-family: "aquino";
-	    color: #ffa000;
-			margin: 0 0 2%;
-	    @include contour(#fff1da);
+			font-size:50px;
+			text-align: center;
 		}
-		ul{
-			width: 90%;
+		.scroll{
+
+		}
+	}
+	#about{
+		background: #00f;
+		h2{
+			font-size:25px;
+			text-align: center;
+		}
+		.title_text{
+			width:90%;
 			margin:0 auto;
-			li{
-				background: #fff;
-				margin: 0 0 15px;
-				padding: 20px;
+		}
+	}
+	#flow{
+		background: #f0f;
+		h2{
+			font-size:25px;
+			text-align: center;
+		}
+		.title_text{
+			width:90%;
+			margin:0 auto;
+		}
+		.image_wrap{
+			width:90%;
+			margin: 0 auto;
+			img{
+				width: 100%;
 			}
-			&.rank-list{
-				li{
-					&:nth-child(1){
-						background:#fff url(../images/rank1.jpg) no-repeat 5% 30%;
-						background-size:auto 50%;
-						border-left:7px solid #ffd700;
-						border-bottom:3px solid #ffd700;
-					}
-					&:nth-child(2){
-						background:#fff url(../images/rank2.jpg) no-repeat 5% 30%;
-						background-size:auto 50%;
-						border-left:7px solid #c0c0c0;
-						border-bottom:3px solid #c0c0c0;
-					}
-					&:nth-child(3){
-						background:#fff url(../images/rank3.jpg) no-repeat 5% 30%;
-						background-size:auto 50%;
-						border-left:7px solid #c47222;
-						border-bottom:3px solid #c47222;
-					}
-					.board__title{
-						font-size:3.5vw;
-					}
-					.board__date{
-						text-align: right;
-						font-size:2.5vw;
-						padding: 0 5% 0 0;
-					}
-				}
-			}
-			&.new-list{
-				li{
-					padding-left:5%;
-					border-left:4px solid #000;
-					border-bottom:2px solid #000;
-				}
-				.board__title{
-					font-size:2vw;
-				}
-				.board__date{
-					text-align: right;
-					font-size:1.5vw;
-					padding: 0 5% 0 0;
-				}
-			}
+		}
+		.detail_wrap{
+
+		}
+	}
+	#come{
+		background: #0f0;
+		h2{
+			font-size:25px;
+			text-align: center;
+		}
+		.title_text{
+			width:90%;
+			margin:0 auto;
 		}
 	}
 }
