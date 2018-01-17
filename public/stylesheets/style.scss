@@ -290,8 +290,8 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 	@include sp_width(100%,750px);
 	background: #0f0;
 	#firstview{
-		background: #ff0 url(http://via.placeholder.com/450x800.png) no-repeat center;
-		background-size: 100% auto;
+		background: #ff0 url(http://via.placeholder.com/450x800.png) no-repeat center top;
+		background-size:auto 100%;
 		height: 100vh;
 		h1{
 			font-size:50px;
