@@ -279,10 +279,16 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 
 //class定義
 .rank_btn{
-	width:60%;
+	width:80%;
+	height:15vw;
+	line-height:15vw;
 	margin:0 auto;
 	background: #ff0;
 	text-align: center;
+}
+
+.title_text{
+	line-height: 1.666;
 }
 
 //ここからsp新規
@@ -290,15 +296,25 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 	@include sp_width(100%,750px);
 	background: #0f0;
 	#firstview{
+		position: relative;
 		background: #ff0 url(http://via.placeholder.com/450x800.png) no-repeat center top;
 		background-size:auto 100%;
 		height: 100vh;
 		h1{
-			font-size:50px;
-			text-align: center;
+			width:80%;
+			margin:0 auto;
+			padding:45% 0 0;
+			img{
+				width:100%;
+			}
+		}
+		.rank_btn{
+			margin-top: 50%;
 		}
 		.scroll{
-
+			position: absolute;
+			right:0;
+			bottom:0;
 		}
 	}
 	#about{
@@ -306,10 +322,13 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		h2{
 			font-size:25px;
 			text-align: center;
+			padding:5% 0;
 		}
 		.title_text{
 			width:90%;
 			margin:0 auto;
+			padding:0 0 5%;
+			font-size:15px;
 		}
 	}
 	#flow{
