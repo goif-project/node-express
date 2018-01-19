@@ -44,10 +44,10 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .mv_2 { opacity: 1.0; transform: translate(0, 0); }
 
 .wrapper { width: 100%; max-width: 750px; margin: 0 auto; }
-.wrapper #firstview { position: relative; background: url(../img/firstview.png) no-repeat center top; background-size: 100% auto; height: 100vh; max-height: 667px; }
-.wrapper #firstview h1 { width: 80%; margin: 0 auto; padding: 40% 0 0; }
+.wrapper #firstview { position: relative; background: url(../img/firstview.png) no-repeat center top; background-size: 100% auto; max-height: 667px; }
+.wrapper #firstview h1 { width: 80%; margin: 0 auto; padding: 130px 0 0; }
 .wrapper #firstview h1 img { width: 100%; }
-.wrapper #firstview .rank_btn { margin-top: 75%; }
+.wrapper #firstview .rank_btn { margin-top: 75%; padding: 0 0 20%; }
 .wrapper #about { border-top: 3px solid #fff; background: #009264; color: #fff; }
 .wrapper #about h2 { font-size: 25px; text-align: center; padding: 5% 0; }
 .wrapper #about .title_text { width: 90%; margin: 0 auto; padding: 0 0 5%; font-size: 15px; }
