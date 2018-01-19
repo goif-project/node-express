@@ -1,57 +1,68 @@
-@charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+/*
+Error: Invalid CSS after "...argin-top: 70e%": expected expression (e.g. 1px, bold), was ";"
+        on line 319 of /Users/Owner/Desktop/golf_rank/public/stylesheets/style.scss
+
+314: 			img{
+315: 				width:100%;
+316: 			}
+317: 		}
+318: 		.rank_btn{
+319: 			margin-top: 70e%;
+320: 		}
+321: 		.scroll{
+322: 			position: absolute;
+323: 			right:0;
+324: 			bottom:0;
+
+Backtrace:
+/Users/Owner/Desktop/golf_rank/public/stylesheets/style.scss:319
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:280:in `times_div_or_mod'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `plus_or_minus'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `relational'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `eq_or_neq'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `and_expr'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `or_expr'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:473:in `space'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:414:in `interpolation'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:338:in `expr'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:721:in `assert_expr'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-
-body { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-blockquote, q { quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-/* Base
-*/
-html { min-height: 100%; -webkit-text-size-adjust: 100%; }
-
-body { position: relative; min-height: 100%; font-size: 14px; color: #333; line-height: 1.3; word-wrap: break-word; font-family: YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; background-color: #fafafa; }
-
-a { color: inherit; text-decoration: none; }
-
-img { vertical-align: middle; -webkit-touch-callout: none; }
-
-ol, ul, li { list-style: none; }
-
-span, i { display: inline-block; }
-
-input, textarea, button { margin: 0; padding: 0; outline: none; border: none; background-color: inherit; color: inherit; -webkit-appearance: none; }
-
-input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
-
-.rank_btn { width: 80%; height: 15vw; line-height: 15vw; margin: 0 auto; background: #ff0; text-align: center; }
-
-.title_text { line-height: 1.666; }
-
-.wrapper { width: 100%; max-width: 750px; margin: 0 auto; background: #0f0; }
-.wrapper #firstview { position: relative; background: #ff0 url(http://via.placeholder.com/450x800.png) no-repeat center top; background-size: auto 100%; height: 100vh; }
-.wrapper #firstview h1 { width: 80%; margin: 0 auto; padding: 45% 0 0; }
-.wrapper #firstview h1 img { width: 100%; }
-.wrapper #firstview .rank_btn { margin-top: 50%; }
-.wrapper #firstview .scroll { position: absolute; right: 0; bottom: 0; }
-.wrapper #about { background: #00f; }
-.wrapper #about h2 { font-size: 25px; text-align: center; padding: 5% 0; }
-.wrapper #about .title_text { width: 90%; margin: 0 auto; padding: 0 0 5%; font-size: 15px; }
-.wrapper #flow { background: #f0f; }
-.wrapper #flow h2 { font-size: 25px; text-align: center; }
-.wrapper #flow .title_text { width: 90%; margin: 0 auto; }
-.wrapper #flow .image_wrap { width: 90%; margin: 0 auto; }
-.wrapper #flow .image_wrap img { width: 100%; }
-.wrapper #come { background: #0f0; }
-.wrapper #come h2 { font-size: 25px; text-align: center; }
-.wrapper #come .title_text { width: 90%; margin: 0 auto; }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...argin-top: 70e%\": expected expression (e.g. 1px, bold), was \";\"\A         on line 319 of /Users/Owner/Desktop/golf_rank/public/stylesheets/style.scss\A \A 314: 			img{\A 315: 				width:100%;\A 316: 			}\A 317: 		}\A 318: 		.rank_btn{\A 319: 			margin-top: 70e%;\A 320: 		}\A 321: 		.scroll{\A 322: 			position: absolute;\A 323: 			right:0;\A 324: 			bottom:0;"; }
