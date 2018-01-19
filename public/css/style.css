@@ -34,8 +34,8 @@ input, textarea, button { margin: 0; padding: 0; outline: none; border: none; ba
 
 input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
-.rank_btn { width: 80%; height: 15vw; line-height: 15vw; margin: 0 auto; background: #ff0; text-align: center; }
-.rank_btn a { display: block; width: 100%; height: 100%; color: #000; }
+.rank_btn { width: 80%; margin: 0 auto; }
+.rank_btn > a { display: block; width: 100%; height: 20vw; line-height: calc(20vw - 10px); margin: auto; border: 5px solid #f5f5f5; box-sizing: border-box; border-radius: 20px; font-size: 16px; font-weight: bold; letter-spacing: 4px; text-align: center; color: #f5f5f5; background-color: #F2784B; }
 
 .title_text, .detail_text { line-height: 1.666; }
 
@@ -44,10 +44,10 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .mv-2 { opacity: 1.0; transform: translate(0, 0); }
 
 .wrapper { width: 100%; max-width: 750px; margin: 0 auto; }
-.wrapper #firstview { position: relative; background: #ff0 url(../img/firstview.png) no-repeat center top; background-size: 100% auto; height: 100vh; max-height: 667px; }
+.wrapper #firstview { position: relative; background: url(../img/firstview.png) no-repeat center top; background-size: 100% auto; height: 100vh; max-height: 667px; }
 .wrapper #firstview h1 { width: 80%; margin: 0 auto; padding: 40% 0 0; }
 .wrapper #firstview h1 img { width: 100%; }
-.wrapper #firstview .rank_btn { margin-top: 70%; }
+.wrapper #firstview .rank_btn { margin-top: 75%; }
 .wrapper #about { border-top: 3px solid #fff; background: #009264; color: #fff; }
 .wrapper #about h2 { font-size: 25px; text-align: center; padding: 5% 0; }
 .wrapper #about .title_text { width: 90%; margin: 0 auto; padding: 0 0 5%; font-size: 15px; }
@@ -58,10 +58,11 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .wrapper #flow .flow_detail h3 .number { padding: 0 5px 0 0; }
 .wrapper #flow .flow_detail .image_wrap img { width: 100%; }
 .wrapper #flow .flow_detail .detail_text { padding: 3% 0; font-size: 14px; }
-.wrapper #come { border-top: 3px solid #fff; background: #8f6d0b; color: #fff; }
-.wrapper #come h2 { font-size: 25px; text-align: center; }
-.wrapper #come .title_text { width: 90%; margin: 0 auto; }
+.wrapper #come { border-top: 3px solid #fff; background: #8f6d0b; color: #fff; padding: 0 0 15%; }
+.wrapper #come h2 { padding: 5% 0; font-size: 25px; text-align: center; line-height: 1.4; }
+.wrapper #come h3 { width: 90%; margin: 5% auto; font-size: 20px; text-align: center; }
 
-.wrapper_rank { width: 100%; max-width: 750px; margin: 0 auto; }
+.wrapper_rank { position: relative; width: 100%; max-width: 750px; margin: 0 auto; }
+.wrapper_rank:after { content: ""; width: 100%; height: 100vh; position: fixed; z-index: -1; top: 0; left: 0; background: #7FDEF4 url(../img/firstview.png) no-repeat center bottom; background-size: 100% auto; }
 .wrapper_rank h1 { width: 80%; margin: 0 auto; padding: 5% 0 0; }
 .wrapper_rank h1 img { width: 100%; }
