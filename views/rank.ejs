@@ -13,11 +13,20 @@
     <div class="wrapper_rank">
       <h1><img src="../img/T6.png" alt="HOME GOLF"></h1>
       <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
-      <ul class="rank-list">
-        <% Rank.forEach(function(scoreRank) { %>
+      <ul class="top-rank-list">1~10位
+        <% Rank1.forEach(function(scoreRank1) { %>
           <li class="main-list__item">
-            <p class="board__title"><%= scoreRank.user_name %></p>
-            <p class="board__date"><%= scoreRank.score %>点</p>
+            <p class="board__title"><%= scoreRank1.user_name %></p>
+            <p class="board__date"><%= scoreRank1.score %>点</p>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+      <ul class="top-rank-list">11~50位
+        <% Rank2.forEach(function(scoreRank2) { %>
+          <li class="main-list__item">
+            <p class="board__title"><%= scoreRank2.user_name %></p>
+            <p class="board__date"><%= scoreRank2.score %>点</p>
             </a>
           </li>
         <% }); %>
