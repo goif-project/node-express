@@ -35,13 +35,13 @@ input, textarea, button { margin: 0; padding: 0; outline: none; border: none; ba
 input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 .rank_btn { width: 80%; margin: 0 auto; }
-.rank_btn > a { display: block; width: 100%; height: 20vw; line-height: calc(20vw - 10px); margin: auto; border: 5px solid #f5f5f5; box-sizing: border-box; border-radius: 20px; font-size: 16px; font-weight: bold; letter-spacing: 4px; text-align: center; color: #f5f5f5; background-color: #F2784B; }
+.rank_btn > a { display: block; width: 100%; height: 20vw; line-height: calc(20vw - 6px); margin: auto; border: 3px solid #f5f5f5; box-sizing: border-box; border-radius: 20px; font-size: 16px; font-weight: bold; letter-spacing: 4px; text-align: center; color: #f5f5f5; background-color: #F2784B; }
 
 .title_text, .detail_text { line-height: 1.666; }
 
-.mv-1 { position: relative; opacity: 0; transform: translateY(20px); transition: 1s; transition-delay: .1s; }
+.mv_1 { position: relative; opacity: 0; transform: translateY(10px); transition: .8s; transition-delay: .15s; }
 
-.mv-2 { opacity: 1.0; transform: translate(0, 0); }
+.mv_2 { opacity: 1.0; transform: translate(0, 0); }
 
 .wrapper { width: 100%; max-width: 750px; margin: 0 auto; }
 .wrapper #firstview { position: relative; background: url(../img/firstview.png) no-repeat center top; background-size: 100% auto; height: 100vh; max-height: 667px; }
@@ -51,15 +51,23 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .wrapper #about { border-top: 3px solid #fff; background: #009264; color: #fff; }
 .wrapper #about h2 { font-size: 25px; text-align: center; padding: 5% 0; }
 .wrapper #about .title_text { width: 90%; margin: 0 auto; padding: 0 0 5%; font-size: 15px; }
-.wrapper #flow { border-top: 3px solid #fff; background: #7FDEF4; color: #000; }
+.wrapper #flow { border-top: 3px solid #fff; background: #7FDEF4; color: #000; font-weight: bold; }
 .wrapper #flow h2 { font-size: 25px; text-align: center; padding: 5% 0; }
-.wrapper #flow .flow_detail { width: 90%; margin: 0 auto; }
-.wrapper #flow .flow_detail h3 { font-size: 17px; padding: 3% 0; }
+.wrapper #flow .flow_detail { width: 90%; margin: 0 auto; padding: 0 0 10%; }
+.wrapper #flow .flow_detail h3 { font-size: 20px; padding: 3% 0; text-align: center; }
 .wrapper #flow .flow_detail h3 .number { padding: 0 5px 0 0; }
 .wrapper #flow .flow_detail .image_wrap img { width: 100%; }
-.wrapper #flow .flow_detail .detail_text { padding: 3% 0; font-size: 14px; }
-.wrapper #come { border-top: 3px solid #fff; background: #8f6d0b; color: #fff; padding: 0 0 15%; }
-.wrapper #come h2 { padding: 5% 0; font-size: 25px; text-align: center; line-height: 1.4; }
+.wrapper #flow .flow_detail .skill_wrap { padding: 3% 5%; font-size: 14px; }
+.wrapper #flow .flow_detail .skill_wrap .skill { margin: 15px 0; }
+.wrapper #flow .flow_detail .skill_wrap .skill_1 { background: url(../img/1.png) no-repeat 95% center; background-size: 50px; }
+.wrapper #flow .flow_detail .skill_wrap .skill_2 { background: url(../img/2.png) no-repeat 95% center; background-size: 50px; }
+.wrapper #flow .flow_detail .skill_wrap .skill_3 { background: url(../img/3.png) no-repeat 95% center; background-size: 50px; }
+.wrapper #flow .flow_detail .skill_wrap .skill_4 { background: url(../img/4.png) no-repeat 95% center; background-size: 50px; }
+.wrapper #flow .flow_detail .skill_wrap .skill span { display: block; width: 60%; margin: 8px 0px; padding: 5px; border-radius: 10px; background: #fff; border: 3px solid #F2784B; text-align: center; box-sizing: border-box; }
+.wrapper #flow .flow_detail .detail_text { padding: 3% 0 0; font-size: 14px; }
+.wrapper #come { border-top: 3px solid #fff; background: #009264; color: #fff; padding: 0 0 15%; }
+.wrapper #come h2 { padding: 5% 0; font-size: 25px; text-align: center; line-height: 1.4; font-weight: normal; }
+.wrapper #come h2 span { font-size: 40px; font-weight: bold; }
 .wrapper #come h3 { width: 90%; margin: 5% auto; font-size: 20px; text-align: center; }
 
 .wrapper_rank { position: relative; width: 100%; max-width: 750px; margin: 0 auto; }
