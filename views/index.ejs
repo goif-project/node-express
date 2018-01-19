@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title><%= title %></title>
-    <script src="/javascripts/jquery.js"></script>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
     <article class="wrapper">
       <section id="firstview">
-        <h1><img src="../images/T6.png" alt="HOME GOLF"></h1>
+        <h1><img src="../img/T6.png" alt="HOME GOLF"></h1>
         <p class="rank_btn"><a href="./rank/">ランキングを見る</a></p>
-        <p class="scroll">スクロール</p>
       </section>
       <section id="about">
-        <h2>HOME GOLFとは</h2>
+        <h2 class="mv-1">HOME GOLFとは</h2>
         <p class="title_text">
           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
           テキストテキストテキストテキストテキストテキスト<br>
@@ -32,8 +30,7 @@
             <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
           </p>
           <p class="detail_text">
-            テキストテキストテキストテキスト<br>
-            テキストテキストテキストテキスト
+            TOPページのSTARTボタンからアプリを行うことができます。
           </p>
         </div>
         <div class="flow_detail second">
@@ -42,8 +39,11 @@
             <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
           </p>
           <p class="detail_text">
-            テキストテキストテキストテキスト<br>
-            テキストテキストテキストテキスト
+            ・スキル1<br>
+            ・スキル2<br>
+            ・スキル3<br>
+            ・スキル4<br>
+            の4つのスキルから選択することができます。
           </p>
         </div>
         <div class="flow_detail third">
@@ -52,8 +52,8 @@
             <img src="http://via.placeholder.com/800x600.png" alt="400×300px">
           </p>
           <p class="detail_text">
-            テキストテキストテキストテキスト<br>
-            テキストテキストテキストテキスト
+            スキルを選択したらゴルフスタート！<br>
+            操作はボールをスワイプするだけなので、とっても簡単です。
           </p>
         </div>
         <div class="flow_detail fourth">
@@ -62,16 +62,21 @@
             <img src="http://via.placeholder.com/800x500.png" alt="400×300px">
           </p>
           <p class="detail_text">
-            テキストテキストテキストテキスト<br>
-            テキストテキストテキストテキスト
+            ゴルフが終わったらモニターをチェック！<br>
+            自分のスコアが表示されます。<br>
+            スマートフォンサイトから全体のランキングも見ることができるので、自分のランキングもチェックしてください！！
           </p>
         </div>
       </section>
       <section id="come">
-        <h2>ブース○○○です。ぜひお越しください。</h2>
-        <h3>ランキングはこちら</h3>
+        <h2>ブースはH444です。<br>ぜひお越しください。</h2>
+        <h3>全体のランキングはこちらからCHECK！！</h3>
         <p class="rank_btn"><a href="./rank/">ランキングを見る</a></p>
       </section>
     </article>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/plugin/easing.js"></script>
+    <script src="/js/plugin/inview.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

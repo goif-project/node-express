@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Base
+*/
+html { min-height: 100%; -webkit-text-size-adjust: 100%; }
+
+body { position: relative; min-height: 100%; font-size: 14px; color: #333; line-height: 1.3; word-wrap: break-word; font-family: YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; background-color: #fafafa; }
+
+a { color: inherit; text-decoration: none; }
+
+img { vertical-align: middle; -webkit-touch-callout: none; }
+
+ol, ul, li { list-style: none; }
+
+span, i { display: inline-block; }
+
+input, textarea, button { margin: 0; padding: 0; outline: none; border: none; background-color: inherit; color: inherit; -webkit-appearance: none; }
+
+input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
+
+.rank_btn { width: 80%; height: 15vw; line-height: 15vw; margin: 0 auto; background: #ff0; text-align: center; }
+.rank_btn a { display: block; width: 100%; height: 100%; color: #000; }
+
+.title_text, .detail_text { line-height: 1.666; }
+
+.mv-1 { position: relative; opacity: 0; transform: translateY(20px); transition: 1s; transition-delay: .1s; }
+
+.mv-2 { opacity: 1.0; transform: translate(0, 0); }
+
+.wrapper { width: 100%; max-width: 750px; margin: 0 auto; }
+.wrapper #firstview { position: relative; background: #ff0 url(../img/firstview.png) no-repeat center top; background-size: 100% auto; height: 100vh; max-height: 667px; }
+.wrapper #firstview h1 { width: 80%; margin: 0 auto; padding: 40% 0 0; }
+.wrapper #firstview h1 img { width: 100%; }
+.wrapper #firstview .rank_btn { margin-top: 70%; }
+.wrapper #about { border-top: 3px solid #fff; background: #009264; color: #fff; }
+.wrapper #about h2 { font-size: 25px; text-align: center; padding: 5% 0; }
+.wrapper #about .title_text { width: 90%; margin: 0 auto; padding: 0 0 5%; font-size: 15px; }
+.wrapper #flow { border-top: 3px solid #fff; background: #7FDEF4; color: #000; }
+.wrapper #flow h2 { font-size: 25px; text-align: center; padding: 5% 0; }
+.wrapper #flow .flow_detail { width: 90%; margin: 0 auto; }
+.wrapper #flow .flow_detail h3 { font-size: 17px; padding: 3% 0; }
+.wrapper #flow .flow_detail h3 .number { padding: 0 5px 0 0; }
+.wrapper #flow .flow_detail .image_wrap img { width: 100%; }
+.wrapper #flow .flow_detail .detail_text { padding: 3% 0; font-size: 14px; }
+.wrapper #come { border-top: 3px solid #fff; background: #8f6d0b; color: #fff; }
+.wrapper #come h2 { font-size: 25px; text-align: center; }
+.wrapper #come .title_text { width: 90%; margin: 0 auto; }
+
+.wrapper_rank { width: 100%; max-width: 750px; margin: 0 auto; }
+.wrapper_rank h1 { width: 80%; margin: 0 auto; padding: 5% 0 0; }
+.wrapper_rank h1 img { width: 100%; }

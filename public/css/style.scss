@@ -289,6 +289,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		display: block;
 		width:100%;
 		height:100%;
+		color:#000;
 	}
 }
 
@@ -296,14 +297,26 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 	line-height: 1.666;
 }
 
+//inview class
+.mv-1 {
+	position: relative;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 1s;
+	transition-delay: .1s;
+}
+
+.mv-2 {
+	opacity: 1.0;
+	transform: translate(0, 0);
+}
+
 //ここからsp新規
 .wrapper{
 	@include sp_width(100%,750px);
-	background: #0f0;
 	#firstview{
 		position: relative;
-		// background: #ff0 url(http://via.placeholder.com/750x1334.png) no-repeat center top;
-		background: #ff0 url(../images/firstview.png) no-repeat center top;
+		background: #ff0 url(../img/firstview.png) no-repeat center top;
 		background-size:100% auto;
 		height: 100vh;
 		max-height:667px;
@@ -316,17 +329,23 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 			}
 		}
 		.rank_btn{
-			margin-top: 70e%;
+			margin-top: 70%;
 		}
-		.scroll{
-			position: absolute;
-			right:0;
-			bottom:0;
-			writing-mode: vertical-rl;
-		}
+		// .scroll{
+		// 	position: absolute;
+		// 	right:30%;
+		// 	bottom:5%;
+		// 	width:60px;
+		// 	height:60px;
+		// 	border:1px solid #fff;
+		// 	border-radius: 50%;
+		// 	writing-mode: vertical-rl;
+		// }
 	}
 	#about{
-		background: #00f;
+		border-top:3px solid #fff;
+		background: #009264;
+		color:#fff;
 		h2{
 			font-size:25px;
 			text-align: center;
@@ -340,7 +359,9 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		}
 	}
 	#flow{
-		background: #f0f;
+		border-top:3px solid #fff;
+		background: #7FDEF4;
+		color :#000;
 		h2{
 			font-size:25px;
 			text-align: center;
@@ -368,7 +389,9 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		}
 	}
 	#come{
-		background: #0f0;
+		border-top:3px solid #fff;
+		background: #8f6d0b;
+		color:#fff;
 		h2{
 			font-size:25px;
 			text-align: center;
@@ -376,6 +399,17 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		.title_text{
 			width:90%;
 			margin:0 auto;
+		}
+	}
+}
+.wrapper_rank{
+	@include sp_width(100%,750px);
+	h1{
+		width:80%;
+		margin:0 auto;
+		padding:5% 0 0;
+		img{
+			width:100%;
 		}
 	}
 }
