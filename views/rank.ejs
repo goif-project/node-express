@@ -13,6 +13,8 @@
     <div class="wrapper_rank">
       <div class="firstview">
         <h1><img src="../img/T6.png" alt="HOME GOLF"></h1>
+        <h2>-ランキング-</h2>
+        <p class="scroll">スクロールするとランキングもっと見れる！！</p>
         <ul class="top-rank-list">
           <% Rank1.forEach(function(scoreRank1) { %>
             <li>
@@ -25,7 +27,7 @@
         <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
       </div>
       <div class="sub_contents">
-        <h2>4~20位</h2>
+        <h2>4 ~ 20 位</h2>
         <ul class="sub_rank">
           <% Rank2.forEach(function(scoreRank2) { %>
             <li>
@@ -35,7 +37,7 @@
             </li>
           <% }); %>
         </ul>
-        <h2>50位</h2>
+        <h2>50 位</h2>
         <ul class="rank50th">
           <% Rank3.forEach(function(scoreRank3) { %>
             <li>
@@ -45,7 +47,7 @@
             </li>
           <% }); %>
         </ul>
-        <h2>100位</h2>
+        <h2>100 位</h2>
         <ul class="rank100th">
           <% Rank4.forEach(function(scoreRank4) { %>
             <li>
@@ -55,6 +57,7 @@
             </li>
           <% }); %>
         </ul>
+        <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
       </div>
     </div>
     <script src="/js/jquery.js"></script>
