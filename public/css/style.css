@@ -18,6 +18,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Base
 */
+html, body { height: 100%; }
+
 html { min-height: 100%; -webkit-text-size-adjust: 100%; }
 
 body { min-height: 100%; font-size: 14px; color: #333; line-height: 1.3; word-wrap: break-word; font-family: YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; background-color: #fafafa; }
@@ -49,8 +51,8 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 
 .under_line_2:before { width: 100%; }
 
-.wrapper { width: 100%; max-width: 750px; margin: 0 auto; }
-.wrapper #firstview { position: relative; background: url(../img/firstview.png) no-repeat center top; background-size: 100% auto; max-height: 667px; }
+.wrapper { height: 100%; width: 100%; max-width: 750px; margin: 0 auto; }
+.wrapper #firstview { position: relative; background: url(../img/firstview.png) no-repeat center top; background-size: 100% auto; height: 100%; max-height: 667px; }
 .wrapper #firstview h1 { width: 80%; margin: 0 auto; padding: 130px 0 0; }
 .wrapper #firstview h1 img { width: 100%; }
 .wrapper #firstview .rank_btn { margin-top: 75%; padding: 0 0 20%; }
@@ -76,7 +78,14 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .wrapper #come h2 span { font-size: 40px; font-weight: bold; display: inline !important; }
 .wrapper #come h3 { width: 90%; margin: 0 auto 5%; font-size: 20px; text-align: center; }
 
-.wrapper_rank { position: relative; width: 100%; max-width: 750px; margin: 0 auto; }
-.wrapper_rank:after { content: ""; width: 100%; height: 100vh; position: fixed; z-index: -1; top: 0; left: 0; background: #7FDEF4 url(../img/firstview.png) no-repeat center bottom; background-size: 100% auto; }
-.wrapper_rank h1 { width: 80%; margin: 0 auto; padding: 5% 0 0; }
-.wrapper_rank h1 img { width: 100%; }
+.wrapper_rank { width: 100%; max-width: 750px; margin: 0 auto; }
+.wrapper_rank .firstview { width: 100%; height: 100vh; background: #7FDEF4 url(../img/firstview.png) no-repeat center bottom; background-size: 100% auto; }
+.wrapper_rank .firstview h1 { width: 80%; margin: 0 auto; padding: 5% 0 6%; }
+.wrapper_rank .firstview h1 img { width: 100%; }
+.wrapper_rank .firstview .top-rank-list { width: 90%; margin: 0 auto; }
+.wrapper_rank .firstview .top-rank-list li { height: 27vw; margin: 0 0 15px; }
+.wrapper_rank .firstview .top-rank-list li:nth-child(1) { background: #fff url(../img/rank1.png) no-repeat 10% center; background-size: 60px; }
+.wrapper_rank .firstview .top-rank-list li:nth-child(2) { background: #fff url(../img/rank2.png) no-repeat 10% center; background-size: 60px; }
+.wrapper_rank .firstview .top-rank-list li:nth-child(3) { background: #fff url(../img/rank3.png) no-repeat 10% center; background-size: 60px; }
+.wrapper_rank .firstview .rank_btn { padding: 5% 0 0; }
+.wrapper_rank .sub_contents { border-top: 3px solid #fff; background: #009264; }

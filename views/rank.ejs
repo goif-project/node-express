@@ -11,44 +11,55 @@
   </head>
   <body>
     <div class="wrapper_rank">
-      <h1><img src="../img/T6.png" alt="HOME GOLF"></h1>
-      <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
-      <ul class="top-rank-list">1~10位
-        <% Rank1.forEach(function(scoreRank1) { %>
-          <li class="main-list__item">
-            <p class="board__title"><%= scoreRank1.user_name %></p>
-            <p class="board__date"><%= scoreRank1.score %>点</p>
-            </a>
-          </li>
-        <% }); %>
-      </ul>
-      <ul class="top-rank-list">11~50位
-        <% Rank2.forEach(function(scoreRank2) { %>
-          <li class="main-list__item">
-            <p class="board__title"><%= scoreRank2.user_name %></p>
-            <p class="board__date"><%= scoreRank2.score %>点</p>
-            </a>
-          </li>
-        <% }); %>
-      </ul>
-      <ul class="top-rank-list">100位
-        <% Rank3.forEach(function(scoreRank3) { %>
-          <li class="main-list__item">
-            <p class="board__title"><%= Rank3.user_name %></p>
-            <p class="board__date"><%= Rank3.score %>点</p>
-            </a>
-          </li>
-        <% }); %>
-      </ul>
-      <ul class="top-rank-list">200位
-        <% Rank4.forEach(function(scoreRank4) { %>
-          <li class="main-list__item">
-            <p class="board__title"><%= Rank4.user_name %></p>
-            <p class="board__date"><%= Rank4.score %>点</p>
-            </a>
-          </li>
-        <% }); %>
-      </ul>
+      <div class="firstview">
+        <h1><img src="../img/T6.png" alt="HOME GOLF"></h1>
+        <ul class="top-rank-list">
+          <% Rank1.forEach(function(scoreRank1) { %>
+            <li>
+              <p class="title"><%= scoreRank1.user_name %></p>
+              <p class="date"><%= scoreRank1.score %>点</p>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+        <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
+      </div>
+      <div class="sub_contents">
+        <h2>4~20位</h2>
+        <ul class="sub_rank">
+          <% Rank2.forEach(function(scoreRank2) { %>
+            <li>
+              <p class="title"><%= scoreRank2.user_name %></p>
+              <p class="date"><%= scoreRank2.score %>点</p>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+        <h2>50位</h2>
+        <ul class="rank50th">
+          <% Rank3.forEach(function(scoreRank3) { %>
+            <li>
+              <p class="title"><%= scoreRank3.user_name %></p>
+              <p class="date"><%= scoreRank3.score %>点</p>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+        <h2>100位</h2>
+        <ul class="rank100th">
+          <% Rank4.forEach(function(scoreRank4) { %>
+            <li>
+              <p class="board__title"><%= scoreRank4.user_name %></p>
+              <p class="board__date"><%= scoreRank4.score %>点</p>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
     </div>
+    <script src="/js/jquery.js"></script>
+    <!-- <script src="/js/plugin/easing.js"></script>
+    <script src="/js/plugin/inview.js"></script> -->
+    <script src="/js/rank.js"></script>
   </body>
 </html>

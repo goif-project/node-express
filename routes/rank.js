@@ -3,13 +3,13 @@ var router = express.Router();
 var moment = require('moment');
 var connection = require('../mysqlConnection');
 //1~10位までの順位を取得するsql文
-var rank1_query = 'SELECT * from total_score ORDER BY score desc LIMIT 10';
+var rank1_query = 'SELECT * from total_score ORDER BY score desc LIMIT 3';
 //11~50位までの順位を取得するsql文
-var rank2_query = 'SELECT * from total_score ORDER BY score desc LIMIT 10,40';
+var rank2_query = 'SELECT * from total_score ORDER BY score desc LIMIT 3,17';
 //100位までの順位を取得するsql文
-var rank3_query = 'SELECT * from total_score ORDER BY score desc LIMIT 100,1';
+var rank3_query = 'SELECT * from total_score ORDER BY score desc LIMIT 49,1';
 //200位までの順位を取得するsql文
-var rank4_query = 'SELECT * from total_score ORDER BY score desc LIMIT 200,1';
+var rank4_query = 'SELECT * from total_score ORDER BY score desc LIMIT 99,1';
 
 
 router.get('/', function(req, res, next) {
