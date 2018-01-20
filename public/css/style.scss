@@ -326,6 +326,10 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 	display: table;
 	margin: 0 auto;
 }
+.under_line_2{
+	position: relative;
+	display: inline-block;
+}
 
 .under_line_1:before{
   position: absolute;
@@ -342,6 +346,20 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 
 .under_line_2:before{
+  position: absolute;
+  top: calc(35% + 25px);
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 5px;
+  background: #009264;
+	border-radius: 10px;
+  transition: 1s cubic-bezier(0.755, 0.000, 0.135, 1.000);
+	transition-delay: .15s;
+}
+
+.under_line_view:before{
   width: 100%;
 }
 
@@ -505,13 +523,14 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 			}
 		}
 		h2{
-			font-size:18px;
+			font-size:22px;
 			font-weight: bold;
 			text-align: center;
 			padding:0 0 1%;
 		}
 		.scroll{
 			font-size:14px;
+			font-weight: bold;
 			text-align: center;
 			padding:0 0 5%;
 		}
@@ -521,6 +540,8 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 			li{
 				height:25vw;
 				margin:0 0 15px;
+				padding:2% 0 0 25%;
+				box-sizing: border-box;
 				&:nth-child(1){
 					background:#fff url(../img/rank1.png) no-repeat 5% center;
 					background-size: 60px;
@@ -534,10 +555,18 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 					background-size: 60px;
 				}
 				.title{
-
+					position: relative;
+					margin:0 0 1% !important;
+					padding:5% 0 4%;
+					font-size:25px;
+					max-width: 84%;
+					height: 1em;
+    			overflow: hidden;
 				}
-				.data{
-
+				.date{
+					font-size:18px;
+					text-align: right;
+					padding:0 8% 0 0;
 				}
 			}
 		}
@@ -550,6 +579,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		padding:1% 0;
 		border-top: 3px solid #fff;
 		h2{
+			position: relative;
 			color:#000;
 			font-size:30px;
 			font-weight: bold;
@@ -561,7 +591,21 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 				width:90%;
 				height: 20vw;
 				margin:0 auto 5%;
+				padding:2%;
 				background: #fff;
+				.title{
+					position: relative;
+					margin:0 0 3.5% !important;
+					padding:3% 3% 2.5%;
+					font-size:20px;
+					height: 1em;
+    			overflow: hidden;
+				}
+				.date{
+					font-size:14px;
+					text-align: right;
+					padding:0 2% 0 0;
+				}
 			}
 		}
 		.rank_btn{
