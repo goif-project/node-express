@@ -15,10 +15,16 @@ var rank4_query = 'SELECT * from total_score ORDER BY score desc LIMIT 200,1';
 router.get('/', function(req, res, next) {
   connection.query(rank1_query, function(err, rows1) {
     connection.query(rank2_query, function(err, rows2) {
-      res.render('rank', {
-        title: 'HOME GOLF -RANK-',
-        Rank1: rows1,
-        Rank2: rows2
+      connection.query(rank3_query, function(err, rows3) {
+        connection.query(rank4_query, function(err, rows4) {
+          res.render('rank', {
+            title: 'HOME GOLF -RANK-',
+            Rank1: rows1,
+            Rank2: rows2,
+            Rank3: rows3,
+            Rank4: rows4
+          });
+        });
       });
     });
   });

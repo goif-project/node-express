@@ -31,7 +31,24 @@
           </li>
         <% }); %>
       </ul>
-      <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
+      <ul class="top-rank-list">100位
+        <% Rank3.forEach(function(scoreRank3) { %>
+          <li class="main-list__item">
+            <p class="board__title"><%= Rank3.user_name %></p>
+            <p class="board__date"><%= Rank3.score %>点</p>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+      <ul class="top-rank-list">200位
+        <% Rank4.forEach(function(scoreRank4) { %>
+          <li class="main-list__item">
+            <p class="board__title"><%= Rank4.user_name %></p>
+            <p class="board__date"><%= Rank4.score %>点</p>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
     </div>
   </body>
 </html>

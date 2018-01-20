@@ -56,7 +56,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 body {
-    position: relative;
     min-height: 100%;
     font-size: 14px;
     color: #333;
@@ -303,19 +302,45 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 	line-height: 1.666;
 }
 
-//inview class
+//inview class1
 .mv_1 {
 	position: relative;
 	opacity: 0;
 	transform: translateY(10px);
-	transition: .8s;
-	transition-delay: .15s;
+	transition: 1s cubic-bezier(0.330, 0.065, 0.000, 1.000);
+	transition-delay: .25s;
 }
 
 .mv_2 {
 	opacity: 1.0;
 	transform: translate(0, 0);
 }
+
+//inview class2
+.under_line_1{
+  position: relative;
+	display: table;
+	margin: 0 auto;
+}
+
+.under_line_1:before{
+  position: absolute;
+  top: calc(35% + 25px);
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 5px;
+  background: #e6ff1d;
+	border-radius: 10px;
+  transition: 1s cubic-bezier(0.755, 0.000, 0.135, 1.000);
+	transition-delay: .15s;
+}
+
+.under_line_2:before{
+  width: 100%;
+}
+
 
 //ここからsp新規
 .wrapper{
@@ -354,6 +379,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		color:#fff;
 		h2{
 			font-size:25px;
+			font-weight: bold;
 			text-align: center;
 			padding:5% 0;
 		}
@@ -377,7 +403,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 		.flow_detail{
 			width:90%;
 			margin:0 auto;
-			padding:0 0 10%;
+			padding:0 0 5%;
 			h3{
 				font-size:20px;
 				padding:3% 0;
@@ -435,11 +461,12 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 			span{
 				font-size:40px;
 				font-weight: bold;
+				display: inline !important;
 			}
 		}
 		h3{
 			width:90%;
-			margin:5% auto;
+			margin:0 auto 5%;
 			font-size:20px;
 			text-align: center;
 		}
