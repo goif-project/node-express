@@ -57,7 +57,7 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .wrapper #about { border-top: 3px solid #fff; background: #009264; color: #fff; }
 .wrapper #about h2 { font-size: 25px; font-weight: bold; text-align: center; padding: 5% 0; }
 .wrapper #about .title_text { width: 90%; margin: 0 auto; padding: 0 0 5%; font-size: 15px; }
-.wrapper #flow { border-top: 3px solid #fff; background: #7FDEF4; color: #000; font-weight: bold; }
+.wrapper #flow { border-top: 3px solid #fff; background: #7FDEF4; padding: 0 0 5%; color: #000; font-weight: bold; }
 .wrapper #flow h2 { font-size: 25px; text-align: center; padding: 5% 0; }
 .wrapper #flow .flow_detail { width: 90%; margin: 0 auto; padding: 0 0 5%; }
 .wrapper #flow .flow_detail h3 { font-size: 20px; padding: 3% 0; text-align: center; }
@@ -71,7 +71,7 @@ input:-webkit-autofill, textarea:-webkit-autofill { -webkit-box-shadow: 0 0 0px 
 .wrapper #flow .flow_detail .skill_wrap .skill_4 { background: url(../img/4.png) no-repeat 95% center; background-size: 50px; }
 .wrapper #flow .flow_detail .skill_wrap .skill span { display: block; width: 60%; margin: 8px 0px; padding: 5px; border-radius: 10px; background: #fff; border: 3px solid #F2784B; text-align: center; box-sizing: border-box; }
 .wrapper #flow .flow_detail .detail_text { padding: 3% 0 0; font-size: 14px; }
-.wrapper #come { border-top: 3px solid #fff; background: #009264; color: #fff; padding: 0 0 15%; }
+.wrapper #come { border-top: 3px solid #fff; background: #009264; color: #fff; padding: 0 0 10%; }
 .wrapper #come h2 { padding: 5% 0; font-size: 25px; text-align: center; line-height: 1.4; font-weight: normal; }
 .wrapper #come h2 span { font-size: 40px; font-weight: bold; display: inline !important; }
 .wrapper #come h3 { width: 90%; margin: 0 auto 5%; font-size: 20px; text-align: center; }
