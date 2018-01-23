@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title><%= title %></title>
-    <script src="/js/jquery.js"></script>
     <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
@@ -15,47 +14,18 @@
         <h1><img src="../img/T6.png" alt="HOME GOLF"></h1>
         <h2>-ランキング-</h2>
         <p class="scroll">スクロールするとランキングもっと見れる！！</p>
-        <ul class="top-rank-list">
-          <% Rank1.forEach(function(scoreRank1) { %>
-            <li>
-              <p class="title under_line_2"><%= scoreRank1.user_name %></p>
-              <p class="date"><%= scoreRank1.score %> 点</p>
-              </a>
-            </li>
-          <% }); %>
-        </ul>
+        <ul id="top-rank-list" class="top-rank-list"></ul>
         <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
       </div>
       <div class="sub_contents">
         <h2 class="under_line_1">4 ~ 20 位</h2>
-        <ul class="sub_rank">
-          <% Rank2.forEach(function(scoreRank2) { %>
-            <li>
-              <p class="title"><%= scoreRank2.user_name %></p>
-              <p class="date"><%= scoreRank2.score %> 点</p>
-              </a>
-            </li>
-          <% }); %>
+        <ul id="sub_rank" class="sub_rank">
         </ul>
         <h2 class="under_line_1">50 位</h2>
-        <ul class="rank50th">
-          <% Rank3.forEach(function(scoreRank3) { %>
-            <li>
-              <p class="title"><%= scoreRank3.user_name %></p>
-              <p class="date"><%= scoreRank3.score %>点</p>
-              </a>
-            </li>
-          <% }); %>
+        <ul id="rank50th" class="rank50th">
         </ul>
         <h2 class="under_line_1">100 位</h2>
-        <ul class="rank100th">
-          <% Rank4.forEach(function(scoreRank4) { %>
-            <li>
-              <p class="title"><%= scoreRank4.user_name %></p>
-              <p class="date"><%= scoreRank4.score %>点</p>
-              </a>
-            </li>
-          <% }); %>
+        <ul id="rank100th" class="rank100th">
         </ul>
         <p class="rank_btn"><a href="../">TOPへ戻る</a></p>
       </div>
@@ -63,6 +33,7 @@
     <script src="/js/jquery.js"></script>
     <!-- <script src="/js/plugin/easing.js"></script>-->
     <script src="/js/plugin/inview.js"></script>
+    <script src="/js/query.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
